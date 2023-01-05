@@ -1,0 +1,29 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+//dependencies {
+//    testImplementation ()
+//}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+help {
+    doFirst {
+        println ""
+        println "************************************************************************ "
+        println "***                                                                  *** "
+        println "*** Welcome to https:https://github.com/DLiudmila/demoqua-test-16!   *** "
+        println "***                                                                  *** "
+        println "*** ./gradlew help                                                    *** "
+        println "***                                                                  *** "
+        println "************************************************************************ "
+        println ""
+    }
+}
